@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FriendFinder</title>
+
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="jumbotron">
+            <h1 class="text-left"></span> Survey Questions</h1>
+            <hr>
+
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+
+                <!-- Current Tables in Use -->
+                <h2>About You</h2>
+                <div class="form-group">
+                    <label for="you-input">Name</label>
+                    <input class="form-control" id="you-input" placeholder="John Doe" type="text" required>
+                </div>
+                <div class="form-group">
+                    <label for="image-input">link to Photo Image</label>
+                    <input class="form-control" id="image-input" placeholder="picture_in_picture" type="text" required>
+                </div>
+
+            </div>
+        </div>
+        <div class="input-field col s12"></div>
+        <h3><strong>Question 1</strong></h3>
+
+        <h4>Do you enjoy Camping?</h4>
+
+        <select id="question1">
+            <option value="" disabled selected>Choose your option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <p><br></p>
+
+        <div class="input-field col s12"></div>
+        <h3><strong>Question 2</strong></h3>
+
+        <h4>do you get along with other people?</h4>
+
+        <select id="question2">
+            <option value="" disabled selected>Choose your option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <p><br></p>
+
+        <div class="input-field col s12"></div>
+        <h3><strong>Question 3</strong></h3>
+
+        <h4>like the outdoors?</h4>
+
+        <select id="question3">
+            <option value="" disabled selected>Choose your option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <p><br></p>
+
+        <div class="input-field col s12"></div>
+        <h3><strong>Question 4</strong></h3>
+
+        <h4>You rarely do something just out of sheer curiosity?</h4>
+
+        <select id="question4">
+            <option value="" disabled selected>Choose your option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <p><br></p>
+
+        <div class="input-field col s12"></div>
+        <h3><strong>Question 5</strong></h3>
+
+        <h4>It is often difficult for you to relate to other people’s feelings?</h4>
+
+        <select id="question5">
+            <option value="" disabled selected>Choose your option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <p><br></p>
+
+        <div class="input-field col s12"></div>
+        <h3><strong>Question 6</strong></h3>
+
+        <h4>You prefer to be left alone?</h4>
+
+        <select id="question6">
+            <option value="" disabled selected>Choose your option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <p><br></p>
+
+        <div class="input-field col s12"></div>
+        <h3><strong>Question 7</strong></h3>
+
+        <h4>You need a vacation?</h4>
+
+        <select id="question7">
+            <option value="" disabled selected>Choose your option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <p><br></p>
+
+        <div class="input-field col s12"></div>
+        <h3><strong>Question 8</strong></h3>
+
+        <h4>you often feel like you have no control of your life?</h4>
+
+        <select id="question8">
+            <option value="" disabled selected>Choose your option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <p><br></p>
+
+        <div class="input-field col s12"></div>
+        <h3><strong>Question 9</strong></h3>
+
+        <h4>You feel like people see you as a joke?</h4>
+
+        <select id="question9">
+            <option value="" disabled selected>Choose your option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <p><br></p>
+
+        <div class="input-field col s12"></div>
+        <h3><strong>Question 10</strong></h3>
+
+        <h4>You need to make a big change in your life?</h4>
+
+        <select id="question10">
+            <option value="" disabled selected>Choose your option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <p><br></p>
+
+        <div>
+            <button class="btn btn-lg btn-primary" type="submit" name="action" id="submitButton">Submit Responses
+                <i class=""></i>
+            </button>
+            <p><br></p>
+        </div>
+
+
+        <footer class="footer">
+            <div class="container">
+                <p><a href="/api/friends">API Friends Link</a> | <a href="https://github.com/ligolf/FriendFinder">Git
+                        Hub Repo</a>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+
+
+
+
+<!-- BELOW CODE IS CRITICAL. IT HANDLES HOW FORM DATA IS LOADED FROM OUR SERVER -->
+<script>
+    // click submit button
+    $('#submitButton').on('click', function (event) {
+        event.preventDefault();
+        // Gather user inputs
+        var friendInput = {
+            name: $('#you-input').val().trim(),
+            photo: $('#image-input').val().trim(),
+            scores: [
+                $('#question1').val().trim(),
+                $('#question2').val().trim(),
+                $('#question3').val().trim(),
+                $('#question4').val().trim(),
+                $('#question5').val().trim(),
+                $('#question6').val().trim(),
+                $('#question7').val().trim(),
+                $('#question8').val().trim(),
+                $('#question9').val().trim(),
+                $('#question10').val().trim()
+            ]
+        }
+
+        // Add user inputs to friends list
+        $.post('/api/friends', friendInput)
+    });
+</script>
