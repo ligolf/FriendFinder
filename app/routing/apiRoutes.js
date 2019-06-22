@@ -12,6 +12,7 @@
 var friends = require("../data/friends");
 
 
+
 // ===============================================================================
 // ROUTING
 // ===============================================================================
@@ -46,6 +47,16 @@ module.exports = function (app) {
       friends.push(req.body);
       res.json(true);
 
+      // Receive user details (name, photo, scores)
+      // var newFriend = req.body;
+
+      // // parseInt for scores
+      // for (var i = 0; i < newFriend.scores.length; i++) {
+      //    newFriend.scores[i] = parseInt(newFriend.scores[i]);
+
+      // }
+
+      // console.log(scores[i]);
 
    });
 };
